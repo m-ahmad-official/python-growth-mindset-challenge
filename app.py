@@ -96,19 +96,20 @@ if uploaded_files:
             # Convert the File -> CSV to Excel
             st.subheader("🔄 Conversion Options")
             conversion_type = st.radio(
-                f"Convert {file.name} to:", ["CSV", "Excel"], key=f"conv_{file.name}"
+                f"Convert {file.name} to:", ["CSV", "Excel"], key=file.name
             )
-            if st.button(f"🔄 Convert {file.name}", key=f"convert_{file.name}"):
+            if st.button(f"Convert {file.name}"):
                 buffer = BytesIO()
                 if conversion_type == "CSV":
                     df.to_csv(buffer, index=False)
                     file_name = file.name.replace(file_ext, ".csv")
                     mime_type = "text/csv"
-                else:  # Excel
+                elif conversion_type == "Excel":
                     df.to_excel(buffer, index=False)
                     file_name = file.name.replace(file_ext, ".xlsx")
-                    mime_type = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-
+                    mime_type = (
+                        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                    )
                 buffer.seek(0)
 
                 # Download Button
