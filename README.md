@@ -17,21 +17,10 @@
 ## Installation
 To use Data Sweeper locally, follow these steps:
 
-1. Clone this repository:
+1. Install Python (if not already installed)
+2. Install the required libraries:
    ```sh
-   git clone https://github.com/your-repo/data-sweeper.git
-   cd data-sweeper
-   ```
-
-2. Create a virtual environment (optional but recommended):
-   ```sh
-   python -m venv venv
-   source venv/bin/activate  # On Windows use: venv\Scripts\activate
-   ```
-
-3. Install dependencies:
-   ```sh
-   pip install -r requirements.txt
+   pip install streamlit pandas
    ```
 
 ## Usage
@@ -44,11 +33,6 @@ streamlit run app.py
 - Python 3.x
 - Streamlit
 - Pandas
-
-Ensure all dependencies are installed via:
-```sh
-pip install -r requirements.txt
-```
 
 ## Contributing
 Feel free to fork this project and submit pull requests to improve functionality! 🚀
