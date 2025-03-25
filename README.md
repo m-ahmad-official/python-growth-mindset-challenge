@@ -1,42 +1,64 @@
-# Data Sweeper 📀
+# Data Sweeper 📀
 
-## Overview
-**Data Sweeper** is a Streamlit-based application that allows users to upload CSV and Excel files, perform data cleaning operations, visualize data, and convert files between formats.
+## 📌 Overview
 
-## Features
-- Upload multiple CSV or Excel files 📂
-- Preview uploaded files in a dataframe table 📋
-- Perform data cleaning:
-  - Remove duplicates ✅
-  - Fill missing values with mean 🛠️
-- Select specific columns for processing 🎯
-- Visualize data with bar charts 📊
-- Convert files between CSV and Excel formats 🔄
-- Download processed files easily ⬇️
+Data Sweeper is a powerful and easy-to-use web application built with **Streamlit** that allows users to **upload, clean, visualize, and convert CSV and Excel files**. Whether you are working with raw datasets or need quick transformations, this tool makes the process seamless and efficient.
 
-## Installation
-To use Data Sweeper locally, follow these steps:
+## ✨ Features
 
-1. Install Python (if not already installed)
-2. Install the required libraries:
-   ```sh
-   pip install streamlit pandas
-   ```
+✅ **Upload multiple CSV and Excel files**\
+✅ **Automatic data cleaning** (remove duplicates, fill missing values)\
+✅ **Column selection** for focused analysis\
+✅ **Built-in data visualization** with interactive charts\
+✅ **File conversion** between CSV and Excel formats\
+✅ **Download processed data** instantly
 
-## Usage
-Run the Streamlit app with:
+## 🛠️ Installation
+
+Ensure you have **Python 3.x** installed on your system, then install the required dependencies:
+
+```sh
+pip install -r requirements.txt
+```
+
+## 🚀 Usage
+
+To launch the application, run the following command in your terminal:
+
 ```sh
 streamlit run app.py
 ```
 
-## Requirements
-- Python 3.x
-- Streamlit
-- Pandas
+This will open the **Data Sweeper** app in your default web browser.
 
-## Contributing
-Feel free to fork this project and submit pull requests to improve functionality! 🚀
+## 📂 How It Works
 
-## License
-This project is licensed under the MIT License.
+### 1️⃣ Upload Files
+
+- Click on the **file uploader** in the sidebar to upload CSV or Excel files.
+- Multiple files can be uploaded at once.
+
+### 2️⃣ Data Cleaning Options
+
+- **Remove Duplicates**: Eliminates duplicate rows automatically.
+- **Fill Missing Values**: Numeric columns are filled with their respective mean values.
+- **Column Selection**: Choose specific columns to keep from the dataset.
+
+### 3️⃣ Data Visualization
+
+- Quickly generate bar charts for numerical data.
+- Select columns to visualize for better insights.
+
+### 4️⃣ Convert and Download
+
+- Convert uploaded files to **CSV or Excel** format.
+- **Download** processed files instantly with a single click.
+
+## 📜 License
+
+This project is **open-source** and available for modification and distribution.
+
+## 💡 Contribution
+
+Contributions are welcome! If you’d like to improve this project, feel free to **fork the repository** and submit a pull request.
 
